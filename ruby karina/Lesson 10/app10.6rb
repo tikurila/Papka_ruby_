@@ -1,0 +1,66 @@
+print "(R)ock, (S)cissors, (P)aper?__"
+s = gets.strip.capitalize
+
+	if s == "R"
+		user_choise = :rock
+	elsif s == "S"
+		user_choise = :scissors
+	elsif s == "P"
+		user_choise = :paper
+	end
+
+#===========================================
+
+arr = [:rock, :scissors, :paper]
+
+computer_choise = arr[rand(0..2)]
+
+#===========================================
+
+puts "user choise: #{user_choise}"
+puts "computer choise: #{computer_choise}"
+
+#===========================================
+
+matrix = [
+			#ничья
+		[:rock, :rock,	:draw],
+		[:scissors, :scissors,	:draw],
+		[:paper, :paper,	:draw],
+
+			#камень
+		[:rock, :paper,	:second_win],
+		[:rock, :scissors,	:first_win],
+
+			#ножницы
+		[:scissors, :rock,	:second_win],
+		[:scissors, :paper, :first_win],
+
+		  	#бумага
+		[:paper, :scissors,	:second_win],
+		[:paper, :rock,	:first_win],
+
+			]
+
+#===========================================
+
+matrix.each do |item|
+	if item[0] == user_choise && item[1] == computer_choise
+
+
+		if item[2] == :second_win
+			puts "Компьютер победил!!!"
+		elsif item[2] == :first_win
+				puts "Твоя победа!!!"
+			else
+			puts "ничья!!!"	
+end
+
+exit
+
+	end
+					
+		end			
+
+
+		

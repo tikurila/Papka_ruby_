@@ -1,0 +1,31 @@
+arr = []
+
+
+while true
+
+		arr2 = []
+
+print "Введите имя: "
+	name = gets.strip
+print "Введите возраст: "
+	age = gets.strip
+	
+
+	if name == ""
+		break
+	end
+
+
+arr2 << name 
+arr2 << age
+arr << arr2
+
+
+end
+
+
+x = 0
+arr.each do |n|
+	x = x + 1
+	puts "#{x}. #{n[0]}, #{n[1]}"
+end

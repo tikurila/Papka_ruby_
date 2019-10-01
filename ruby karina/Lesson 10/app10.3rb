@@ -1,0 +1,4 @@
+arr = ["sveta", "dima", "liza", "lena"]
+arr2 = arr[1..3]
+arr2[2].capitalize!
+puts arr2

@@ -1,0 +1,29 @@
+
+loop do
+	
+	print "Введите имя:"
+ name = gets.strip
+
+      if name == ""
+      	ss
+      	exit
+      end
+
+     
+    print "Введите возраст: "
+age = gets.to_i
+      
+     
+   tt name, age
+
+end
+
+	print "Введите имя: "
+      name = gets.strip
+       
+
+         
+      print "Введите возраст: "
+      age = gets.to_i
+          
+        

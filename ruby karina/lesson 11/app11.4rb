@@ -1,0 +1,17 @@
+h = {'dog' => ['собака', 'пес'], 'cat' => ['кот','кошка'], 'girl' => ['девочка','девушка']}
+
+while true
+	
+ puts "Введите слово из перечисленных: (dog, cat, girl)  "
+ xx = gets.strip
+
+tr = h[xx]
+ tr.each do |x|
+ 	puts "перевод слова: #{x}"
+ end
+
+ if xx == ""
+ 	break
+ end
+
+end

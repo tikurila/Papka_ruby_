@@ -1,0 +1,10 @@
+h = {'dog' => ['собака', 'пес' ], 'cat' => ['кот','кошка'], 'girl' => ['девочка', 'девуля', 'девушка'] }
+
+
+x = 0
+h.each_value do |value|
+	puts "значение: #{value}"
+
+	x = x + value.size
+end
+puts x
